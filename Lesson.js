@@ -12,6 +12,16 @@ let proverb = [
   "El elin eşeğini türkü çağırarak arar."
 ]
 function RandomProverb(){
-    let randomNumber = Math.random() * proverb.length + 1
+    let randomNumber = Math.floor(Math.random() * proverb.length) - 1
     alert(`${proverb[randomNumber]}`)
+}
+
+let clickCount = 0
+function changeColor(){
+  clickCount++
+  if(clickCount === 1){
+   body.setAttribute = ("style", "background-color:'red'"
+  }else if(clickCount === 2){
+   body.setAttribute = ("style", "background-color:'blue'"
+  }
 }
